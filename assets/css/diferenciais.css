@@ -1,0 +1,24 @@
+.diferenciais {
+    margin-top: 20rem;
+}
+
+.capa-diferenciais {
+    width: 100%;
+    height: 85vw;
+    z-index: -1;
+    background: url('../img/card-diferenciais.jpg') center/cover no-repeat;
+}
+
+.card-diferenciais {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--branco);
+    margin-top: -150px;
+    padding: 2rem;
+}
+
+.card-diferenciais-img {
+    width: 100%;
+    margin: auto;
+}

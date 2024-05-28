@@ -36,10 +36,5 @@
 .home_title h1 {
     font-size: 1.6rem;
 }
-.home_btn{
-    padding: 0.8rem 0;
-    background-color: var(--preto);
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-}
+
 

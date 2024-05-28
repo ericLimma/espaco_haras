@@ -68,3 +68,63 @@ main {
     border: 2px solid var(--branco);
     opacity: 0.95;
 }
+
+.btn-preto,
+.btn-vermelho {
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    width: 270px;
+    height: 56px;
+    vertical-align: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-preto {
+    background-color: var(--preto);
+}
+
+.btn-vermelho {
+    background-color: var(--vermelho);
+}
+
+
+.detalhe-horizontal,
+.detalhe-vertical {
+    position: relative;
+    display: inline-block;
+
+}
+
+.detalhe-vertical {
+    padding-left: 10px;
+}
+
+.detalhe-horizontal::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    background-color: var(--vermelho);
+    width: 100px;
+    height: 1.5px;
+    bottom: -1px;
+    transform: translateX(-50%);
+
+}
+
+.detalhe-vertical::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--vermelho);
+    width: 1.5px;
+    height: 2rem;
+
+}

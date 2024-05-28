@@ -1,0 +1,17 @@
+.alta-gastronomia{
+    padding: 2rem 2rem 4rem 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: .9rem;
+}
+.alta-gastronomia h2{
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+.alta-gastronomia-img{
+    width: 100%;
+}

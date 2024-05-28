@@ -41,11 +41,7 @@
     padding: .5rem 2rem;
 }
 
-.btn-eventos {
-    background-color: var(--vermelho);
-    color: var(--branco);
-    padding: .8rem 3rem;
-}
+
 
 .evento-card p {
     width: 80%;
