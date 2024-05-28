@@ -1,0 +1,73 @@
+.tipo_de_evento {
+    background-color: var(--preto);
+    font-size: .9rem;
+    font-weight: 300;
+    padding: 4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    margin-bottom: 210px;
+}
+
+.texto-chamada,
+.evento_card {
+    width: 90%;
+    margin: auto;
+}
+
+.card-container {
+    width: 90%;
+    height: 90vw;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.evento-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.evento-btn {
+    padding: .5rem 2rem;
+}
+
+.btn-eventos {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: .8rem 3rem;
+}
+
+.evento-card p {
+    width: 80%;
+}
+
+.casamento-container {
+    background: url('../img/card-casamentos.jpg') center/cover no-repeat;
+}
+
+.corporativo-container {
+    background: url('../img/card-corporativo.jpg') center/cover no-repeat;
+}
+
+.formatura-container {
+    background: url('../img/card-formatura.jpg') center/cover no-repeat;
+}
+
+.aniversario-container {
+    background: url('../img/card-aniversario.jpg') center/cover no-repeat;
+}
+
+.evento-carrossel {
+    width: 90%;
+    margin-bottom: -200px;
+}

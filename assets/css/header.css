@@ -1,0 +1,51 @@
+.logo {
+    width: 180px;
+}
+
+.nav-button {
+    border: none;
+    outline: none;
+}
+
+.nav-button:hover {
+    border: none;
+    outline: none;
+}
+
+.nav-button:active {
+    border: none;
+    outline: none;
+}
+
+.navbar {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+
+}
+
+.navbar-nav>.nav-item {
+    padding: 1rem;
+}
+
+.nav-item {
+    font-weight: 300;
+}
+
+.dropdown-menu {
+    font-size: 0.8rem;
+    border: none;
+    background-color: var(--branco);
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+
+}
+
+.nav-icons .nav-link img {
+    width: 20px;
+}
