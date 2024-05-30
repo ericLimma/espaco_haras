@@ -94,6 +94,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .btn-preto {
@@ -139,3 +140,24 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.desktop{
+    display: none;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .desktop {
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

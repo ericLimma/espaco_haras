@@ -20,7 +20,6 @@
 .navbar {
     z-index: 1;
     position: absolute;
-    width: 100%;
 
 }
 
@@ -48,4 +47,14 @@
 
 .nav-icons .nav-link img {
     width: 20px;
+}
+
+@media (min-width: 1400px) {
+ 
+    .navbar-collapse{
+        align-self: flex-end;
+    }
+    header{
+         padding: 0 2rem;
+    }
 }

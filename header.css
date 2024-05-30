@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--branco);
+}
+
+a,
+li,
+a:visited {
+    color: var(--cinza-claro);
+}
+
+a:hover {
+    color: var(--preto);
+}
+
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color: var(--branco);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    font-size: 1rem;
+    transition: .3s ease;
+    font-family: var(--font-princial);
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: var(--branco);
+
+}
+
+.nav-list{
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--cinza-claro);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-item input {
+    display: none;
+}
+
+.accordion-item label {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    font-size: 1rem;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+    border-left: 1.5px solid var(--vermelho);
+}
+
+.arrow {
+
+    transition: transform 0.3s ease-in-out;
+}
+
+
+[id^=accordion]:checked~.accordion-content {
+    max-height: 1000px;
+
+}
