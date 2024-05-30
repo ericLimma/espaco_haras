@@ -5,10 +5,11 @@
     justify-content: center;
     background-color: var(--preto);
     color: var(--branco);
-    padding: 2rem;
+    padding: 3rem 2rem 2rem  ;
     gap: 1rem;
     font-weight: 200;
     font-size: .9rem;
+    margin-top: 2rem;
 
 }
 

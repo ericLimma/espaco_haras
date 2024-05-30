@@ -2,7 +2,7 @@
     background-color: var(--preto);
     font-size: .9rem;
     font-weight: 300;
-    padding: 4rem 0 0;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,17 +10,16 @@
     gap: 3rem;
     position: relative;
     margin-bottom: 210px;
+
 }
 
 .texto-chamada,
 .evento_card {
-    width: 90%;
     margin: auto;
 }
 
 .card-container {
-    width: 90%;
-    height: 90vw;
+    height: calc(100vw-2rem);
     max-width: 400px;
     max-height: 400px;
 }
@@ -64,6 +63,5 @@
 }
 
 .evento-carrossel {
-    width: 90%;
     margin-bottom: -200px;
 }

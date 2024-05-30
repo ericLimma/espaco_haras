@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -21,6 +22,9 @@
     <link rel="stylesheet" href="assets/css/diferenciais.css">
     <link rel="stylesheet" href="assets/css/alta-gastronomia.css">
     <link rel="stylesheet" href="assets/css/realize.css">
+    <link rel="stylesheet" href="assets/css/mapa.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -99,7 +103,7 @@
         </div>
         <section id="home">
             <div class="home_capa"></div>
-            <article class="home_card">
+            <article class="home_card" data-aos="fade-down">
                 <div class="home_title">
                     <h2 class="text-uppercase">Bem-vindo ao</h2>
                     <h1 class="text-uppercase">Espaço Haras</h1>
@@ -116,12 +120,16 @@
             </article>
         </section>
         <section id="tipo_de_evento" class="tipo_de_evento text-light">
-            <h2 class="text-uppercase text-center detalhe-horizontal">Tipo de Evento</h2>
-            <p class="texto-chamada">Todos os espaços do Espaço Haras são versáteis e foram projetados para atender as
+            <h2 class="text-uppercase text-center" data-aos="fade-up">
+                Tipo de Evento
+                <div class="detalhe-div"></div>
+            </h2>
+            <p class="texto-chamada" data-aos="fade-up">Todos os espaços do Espaço Haras são versáteis e foram
+                projetados para atender as
                 mais diferentes
                 necessidades e tipos de eventos, com layouts 100% personalizáveis.
             </p>
-            <div class="casamento-container card-container">
+            <div class="casamento-container card-container" data-aos="fade-up" data-aos-delay="200">
                 <div class="evento-card">
                     <h3>CASAMENTO</h3>
                     <p>Sua cerimônia e celebração se tornam realidade no Espaço Haras!
@@ -131,7 +139,7 @@
                     <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
                 </div>
             </div>
-            <div class="corporativo-container card-container">
+            <div class="corporativo-container card-container" data-aos="fade-up" data-aos-delay="150">
                 <div class="evento-card">
                     <h3>CORPORATIVO</h3>
                     <p>Os melhores eventos corporativos acontecem aqui!
@@ -142,7 +150,7 @@
                     <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
                 </div>
             </div>
-            <div class="formatura-container card-container">
+            <div class="formatura-container card-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="evento-card">
                     <h3>FORMATURA</h3>
                     <p>Sua formatura ainda mais inesquecível!
@@ -154,7 +162,7 @@
                     <a href="#" class="evento-btn btn btn-outline-light text-uppercase">Saiba Mais</a>
                 </div>
             </div>
-            <div class="aniversario-container card-container">
+            <div class="aniversario-container card-container" data-aos="fade-up" data-aos-delay="200">
                 <div class="evento-card">
                     <h3>ANIVERSÁRIO & OUTROS</h3>
                     <p>SO cenário perfeito para a celebração dos seus momentos mais importantes.
@@ -165,7 +173,7 @@
                 </div>
             </div>
             <a href="#" class="btn-vermelho btn text-uppercase">agende sua visita</a>
-            <div id="carouselExample" class="evento-carrossel carousel slide">
+            <div id="carouselExample" class="evento-carrossel carousel slide" data-aos="fade-left">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/carrossel_1.jpg" class="d-block w-100" alt="">
@@ -197,15 +205,18 @@
         </section>
         <section id="diferenciais" class="diferenciais">
             <div class="capa-diferenciais"></div>
-            <div class="card-diferenciais">
-                <h2 class="text-uppercase detalhe-horizontal">diferenciais</h2>
+            <div class="card-diferenciais" data-aos="fade-left" data-aos-delay="150">
+                <h2 class="text-uppercase">diferenciais
+                    <div class="detalhe-div"></div>
+                </h2>
                 <p>O que você adquire ao fechar um pacote conosco?</p>
                 <img class="card-diferenciais-img" src="assets/img/outros_serviços.png" alt="">
             </div>
         </section>
         <section id="alta-gastronomia" class="alta-gastronomia">
             <h2 class="text-uppercase detalhe-vertical">Alta Gastronomia</h2>
-            <img class="alta-gastronomia-img" src="assets/img/alta_gastronomia.jpg" alt="">
+            <img class="alta-gastronomia-img" data-aos="fade-nup" data-aos-delay="100"
+                src="assets/img/alta_gastronomia.jpg" alt="">
             <p>Construímos o banquete ideal com seu toque especial.
                 Com uma ampla variedade de opções, desde ilhas de frios, finger foods, jantares, ilha de massas até food
                 trucks e costelada no chão.
@@ -215,7 +226,10 @@
             <a href="#" class="btn text-uppercase btn-preto ">CONHEÇA O NOSSO <br>ZARA BUFFET</a>
         </section>
         <section id="realize" class="realize">
-            <h2 class="realize-title detalhe-horizontal">REALIZE SEU EVENTO CONOSCO!</h2>
+            <h2 class="realize-title">REALIZE SEU EVENTO
+                <div class="detalhe-div"></div>
+                CONOSCO!
+            </h2>
             <p>Excelência, infraestrutura, tradição, referência e versatilidade tornam o Espaço Haras o local ideal para
                 seu evento!
             </p>
@@ -224,10 +238,10 @@
                 realidade, eventos são potencializados e celebrações se tornam memoráveis.
             </p>
             <div class="realize-mosaico">
-                <img src="assets/img/realize_1.jpg" alt="">
-                <img src="assets/img/realize_2.jpg" alt="">
-                <img src="assets/img/realize_3.jpg" alt="">
-                <img src="assets/img/realize_4.jpg" alt="">
+                <img src="assets/img/realize_3.jpg" data-aos="fade-down" data-aos-delay="100" alt="">
+                <img src="assets/img/realize_4.jpg" data-aos="fade-down" data-aos-delay="200" alt="">
+                <img src="assets/img/realize_2.jpg" data-aos="fade-up" data-aos-delay="150" alt="">
+                <img src="assets/img/realize_1.jpg" data-aos="fade-up" data-aos-delay="180" alt="">
             </div>
             <a href="" class="btn btn-vermelho text-uppercase">Solicite um Orçamento</a>
             <!-- <div>
@@ -238,128 +252,152 @@
         <!--    <section class="bg-dark" id="tour_completo">
             <h2 class="text-light text-uppercase">tour completo</h2>
             <video src="assets/video/tour_completo.mp4" class="object-fit-fill"></video>
-        </section>
-        <section id="onde_estamos">
-            <h2 class="text-uppercase">Onde estamos?</h2>
-            <iframe
+        </section>-->
+        <section id="onde-estamos" class="onde-estamos">
+            <h2 class="text-uppercase">Onde estamos?<div class="detalhe-div"></div>
+            </h2>
+            <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8003104095037!2d-47.596177824695985!3d-22.698476479402224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62e7265c16c91%3A0x2eb14df4bf9d5544!2sESPA%C3%87O%20HARAS!5e0!3m2!1spt-BR!2sbr!4v1716854276847!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div>
-                <img
+            <div class="endereco">
+                <img class="mapa-icone"
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERUlEQVR4nO1aS6gdRRBtEzWSKKiPy/Q5fT+Cz4AvIshDMKCC5ulCEPyh4kIkEReiRhGMoBFc6MbgB/G/iAuNxscLiUZ04QdE8EOCSowSE8MziHGhYlRExdyR0hoYh/ndmZ43V7Cg4NJTXV2nq7q7uvoa8z+l0/T09FEkrya5CcBekr8I6+/nSV4lMmacyVp7Ocn9JMMC3g/gUjOGdATJh2OG7gKwNgiCFUEQLFNeIW3yLZID8KD0NeNCJB9Sw34neaMxZlGO+GIAN6ms9NlgxoEAXBKBcM6dX7YfyVURGJIXmzZpamrqaAAH1BjxxEgE4GbtO9/qBuCcuyJaExIyiW9dALMkf1Kec86dklCxmOSnosNae5lpiwC8qGG1NgXE98ndStq63a5LyN6m3zeZtgjAHp3NqUT7rBr+ihguDGC7tm2OywZBcJq271kww621A5JbAHwXn+mJiYnj4nIaSmF89kn21OAf47LSN8VzHyV1eiWSr6UdcP1+/4SE3CFplxArAtLtdk9M0wngiSaB/Jw2qLX2zITcnBqzXcDomnlV22bjstI34/QfkpyRDcE5dxbJ20k+DeBtkjsAvExyZSUgAL7OGPTuBJDlyfCLLfbJhM47slIZAD9E3s34/huA6SpANmQo/CQpqwt8sxpySDyRBKGgPyyRm4U5YDZWAXJBjsJzRtVH8ow6IPgPv1M4kHPudJKPAHiP5Jckd+co3FphYl7wAGRr0WzdpwuurMJhctHnkbX2VJJ/1gUC4PHMQXq93skVlb41gje2efBGSPK6pga5skzm6wlEGATBSVkg1tRUfnAwGByfBUIuWbreaoMAsC0vpP5OL2ryU0WXsBp8WA9XOSxT6UgA73ty+RDA2SkgVoohNb1waxaAKKTu9RW3OuAXnU7n2Jj+pSQ/86D7rkwQElJy3PsEomCejXnjGU96n8vzxkbfIGJgrpFalkedn+cB2dsUkCjX8qhvKBGUBeSGirvVvJwJuqXOkPyqwQkJS91V5HKkW+Mou8qqskmlZz4s4WpKlD1L5UDxXSnr2togDyUfzAUD4LGSymZa8kioIbYvF4geXGWUzYvx4hkAFy7UGuG/a8e5Hlm6kAZVBPFrv99HLhD1io+cq0m+vxCEAvGRTjTFB0vXvUg+OsZhdb0pSxJ/DZ/4VXlXsmBeSLIbkVw/BsaHETvnLjJVKSr9t80A3qwMQoFsGRNvnFcLiFYM2/bGx7VAKJA32gZCcr0PIGVzryZ5Z+2nbP03w1zN0DiQ9hzntfBQFkz0pFYFRKfTsfIK7Jy7tqCGHObwbuOJpGT0wIg14TDl/X2R/F8leoMsORl/kFxtfJK19lyS9wC4E8CTAD7QgdIMeKlgYtYUpf8AvkmrkzVCg8HgGHkj0UzgdXndkkdNAP2ivpOTk0sA3ELy2xQg7/Z6PZr/EgVBsAzAOt0YhNfJumrbrgWlvwCojcwxK4K1xwAAAABJRU5ErkJggg==">
                 <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Limeira - SP</p>
             </div>
         </section>
-        <section class="bg-dark text-light" id="faq">
+        <section class="faq" id="faq">
             <h2 class="text-uppercase">perguntas frequentes</h2>
-            <div class="accordion" id="accordionExample">
+            <div class="accordions">
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            O espaço possui estacionamento de fácil acesso disponível para os convidados?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500 carros.
-                        </div>
+                    <input type="checkbox" id="accordion-1">
+                    <label for="accordion-1">
+                        O espaço possui estacionamento de fácil acesso disponível para os convidados?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500 carros.
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            O espaço possui equipe de segurança e limpeza durante o evento?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, é incluído em proposta uma equipe completa e qualificada de seguranças, banheiristas e
-                            vassourinhas ao longo de todo o evento.
-                        </div>
+                    <input type="checkbox" id="accordion-2">
+                    <label for="accordion-2">
+                        O espaço possui equipe de segurança e limpeza durante o evento?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, é incluído em proposta uma equipe completa e qualificada de seguranças, banheiristas e
+                        vassourinhas ao longo de todo o evento.
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            O espaço possui acessibilidade para PCD?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, o espaço é completo e acessível.
-                        </div>
+                    <input type="checkbox" id="accordion-3">
+                    <label for="accordion-3">
+                        O espaço possui acessibilidade para PCD?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço é completo e acessível
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            O local possui opções de espaços cobertos para dias de chuva?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, o Espaço Haras oferece ambientes cobertos e climatizados.
-                        </div>
+                    <input type="checkbox" id="accordion-4">
+                    <label for="accordion-4">
+                        O local possui opções de espaços cobertos para dias de chuva?
+
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o Espaço Haras oferece ambientes cobertos e climatizados.
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            O espaço possui a possibilidade de Cerimônia no local?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, o espaço oferece diversos ambientes que possibilitam layouts para realização de
-                            cerimônias.
-                        </div>
+                    <input type="checkbox" id="accordion-5">
+                    <label for="accordion-5">
+                        O espaço possui a possibilidade de Cerimônia no local?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, o espaço oferece diversos ambientes que possibilitam layouts para realização de cerimônias.
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            O espaço possuí Jardim ao Ar Livre para atividades recreativas, cerimônias e entretenimento
-                            adicional?
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Sim, possuímos Jardim ao ar livre amplo para a realização de diversas atividades.
-                        </div>
+                    <input type="checkbox" id="accordion-6">
+                    <label for="accordion-6">
+                        O espaço possuí Jardim ao Ar Livre para atividades recreativas, cerimônias e entretenimento
+                        adicional?
+                        <span class="arrow">
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR4nO2POwqAMBAFtfCsNv7Ai5jOe+a9TlwJGAmygp+AzQ6EFLvMJEVhGMa/iEiVY0eFZAtgCfeNneZNYCApAFaSnTLv9pmQ7B8HRKQEMCWRQ0KyjnIAc9h9HLiKMJf8FHExksjdZ7n2k2wv1yLe+zGc7HLD+JcNabe6vRZv7kwAAAAASUVORK5CYII=">
+
+                        </span>
+                    </label>
+                    <div class="accordion-content">
+                        Sim, possuímos Jardim ao ar livre amplo para a realização de diversas atividades.
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer id="footer" class="bg-dark text-light">
-        <img src="assets/img/logo_branco.png" alt="">
-        <div>
-            <img
+    <footer id="footer" class="footer">
+        <img class="footer-logo" src="assets/img/logo_branco.png" alt="">
+        <div class="footer-contato">
+            <img class="footer-icone"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADt0lEQVR4nO2aOYgUQRSG2/vAG48NRMUjUEwEA2PxwAtFxDMxE+8jNBGMvAIXwQPBwEBFMfDGQEUDETExcVddxBORGWbHrv+vHnfVkgclK7M1M9U9Y08jPihYmO7X9fV7VfW/1xsE/+0ftWKxOJrkKpJHSd4i2U6yAOCbDPmbZJv9Ta5Z2dnZOSrIghljBimlNpG8C+A7SRNn2HvuKKU2iq+gCQBDtNb7AHyKO/kqUB9J7jHGDE4FAsASAB2NAnAAvQaw+K8BSOgBtP4tAMc4L5FvKIRSagLJZylCGBudp0qp8Q2BiKJoioQ7bQj2wLySOdQFEYbhOLuNNgWCPTAdAFoSQcju0Yx0YpU0S7RFAzjV7MmzN8yJuBBLmj1pVoZZFGebfZlhkNdeh6ac2J4Ou0juMsYMNcb0VUotBPAjJaDdPtHwlR1bHCl5PaWofKi68K0A9HH00HW/SIu0UkxrvaEiiKhYTyfrKkS0T4rr63bFesJXikdRNL3Ky9idUnp15/P5Ea4JrPJ1Ui0/pViyG0EaUVnhAjnm60CkSyWQKIqmAfiZEsgRF8jNGGFd5oIwxgwgeT8lCEPyRq9JiMqMAXI5I7Km3RWRfAyQLq31JIePBymD5Fxv81scJwAulfsIw3AmgCgtEAAlF0iSCax2RGVbU0FIfk7grKC1nux4Ka1NSy2SLxI6e57L5YaXn/C1tnMAb5P2w9gz2urafh3jljGmn0u7AVCO6/NRFE3949w5lSS1AVx3gRysM8znRM47/E4EcOG3xBdpoZSa70jHFpKHSH6N8czDdUmUGr2oAb2cB0FQKpVmyElMco3r97LrjGdElvdyUCgURsou0ACYe8VicUyQ0MIwHOsJ0eUUjY0sjGQhu9LHxwAs9XzOzboLK08YEY5nZY3EBLnm419rvb6iE8lvAO8aBWOBSgBOkpzrUWaf9vT53hgzsOobIbm9kSBl4wWA/QDm2KbFMGmHktwK4E0MPztrhtY6Nhke7V4dRwCbMzBZUyGlfiqlFtSEsCAXMwxy3AtCZEacuiRliCc1F/hvIzkvoxAd8rHJC8Km1YEMQrx0lQq1QB5nLZ3CKh2buht0KY0ziT7saK3XZmDyRs4J7y3WZVJPeDwkB+CqfE4guddWeY1Ko/dyYtf9HxDSqnc84AuAKyR3KKVmSwn75z3GmP7SFRfVnLDC6xYVKwLQe2utZQAeSQNC2jyifcIwnFU+8WomuskWZwetgm2z/iLbaspbrSWlwmEpispr/f8W/EP2C8nUy5qJ62wFAAAAAElFTkSuQmCC">
             <p>+55 19 99709-3745 <br> (Edmara - Gerente do Espaço Haras)</p>
         </div>
-        <div>
-            <img
+        <div class="footer-contato">
+            <img class="footer-icone"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO1ZPWtUQRQdv0HR+IWosfYLO+3EoK0gRoNiY5NWEISorYVECxUUkaSxsFQQbE0i+AtiYTA2isZC3PXlfZwzbqGOXHeMi+zmzXv75r1FcuDCFu/M3DP33rkzs0ot4T9HFEV7AFwlOUnyDSzkN8kJAFcajcZu1asgeYjkFEnjaCL0oOoVGGNWAbgP4GcGEb9NOADuGWNWVioiDMNNJF9kFdAuOvPz8xsri0TGVEqLzktjzOrShUg6FSWiRczd0gs7T0241AzL3ACKTKk2NlGKiDiO93oUYcRK6TO22bmkyUeSQ7Vabb0YyUGSs47cy96FSOhdRIRhuLnddm0Fpol57l0IgLcOjgx14mutzzjwZ70LIRmnOSKp1Ilfr9c3OAiJvQsBoLsREgRBn0Nq6jKEfHJY0cFOfK31WZcaU77heLaalcL+lxtF0RYAcw78Se9CANxx3X6lsKUmxCQSjiIMyVvehZA84ehMbgNw3LsQY8w6AA2PIrQxZq0qAwCeehTyWJUFkqc9ptbJsq+3HzxEY07GVmUCwIiHaFxSZcMeNcICRUTS9VUVAHC7QCE3VVUgubP59tZ1bSQAtlcmxIq5XkA0rqmqUWve/j53IeKL1JvqBZC82IWQC6pXYIxZTXImh4jX3vuGMWYZgHeLOZIkydE/32utj2R565JvkyQ51sI/vBhfGrD4lFmIOOa4ogsP0CQfZYjGw5ZFW0HyVRpHfMosBMCYHWDUlZMkyTaSXx1E1OI43uo6LslRG5WxPDlft+lzIAsXwHmHlT2XZcw4jvdZbmCMWeNMtI9pQpzOMqHLMR/AszxjkpzOfDoG8MROOpJnUgA7OqRYLW8Hhz2kim9OBGlOcksD8IPkLpUTJE8Veddg8zj0HcA3pz+FAAzbSafyTtoy+XhLSj0o6l8AAMPFfpwCuXvbRjlTxD0crotMsl9SSsJX1N1AdhyxIsYKgqBPfLNp39/xQ3nOz1RQFQAuG1FLd+345Fk1mNYa4jjen6vplAyT1qxJ3rBCxlWPg393w9F2J933XdwpKjE0T8TLF4RorQeqdiqvaa0HKkiKJag0/ALBtZsoADVy3AAAAABJRU5ErkJggg==">
             <p>Rod. Dep. Laércio Côrte <br> Km 136 - Piracicaba, Liumeira - SP</p>
         </div>
-        <div>
-            <img
+        <div class="redes">
+            <img class="footer-icone"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nO2azU4UQRDH+6BeJKh3OBg/Ey9GwYNRD36cAV9FhReAKEfFg0JA3sEI0WUJmPgIAt7x5LDLbte/Zy7QpkitToSdz5Yeku2kEg5b3fXrququ6UKp3ugN/6PVal0jogkAKwA2iYgAWBcic20CqBHROK/lHADAEIC6K6NzwH0zxtwtDWCtPU1Eb4lo/7gh8Bdmn4hmrLWnCkHs7u5eALDqCwCHpc425faEj1BCune+WmvPZAbhcPJtNLrDvMmc2D5zAukgbNvtLCCVCykclloiBJ/dng38BGBAZCnpt1EUXUnKjQnPIAMdW4wxgykh9iIprGonBQTAlySP/HBgzA6AeQAjHKrW2rMsErajABYANLroLjGAQCynrLOV5JF2UQAiMgAmgyDoT0xEpVSj0TgHYEp0im5YOwmkKMR2/EjUWj8BMMe7xsVgrCCc1Vo//ueo3y66rnIJIoYcxHYURVeJaD2Dzlrn1GHdojDKFYiExoEnjDEPEmL/yFwyxtyXdYeJKPTpkcmOJ3JC/IEJw/CyrP3KF8gOJy3rZQmnBFnlOZrN5vm8m+EKZD6W2LaMaK0fyfoffICMiM5cWRAA72WusWMH4bwQnS0HIJtFaj3lAsRa2yf5ocuC8Bw8l7W270SDAGjxXEEQ9J/00NrwFloARkVn1kFovZO5nvoAWWAdrp3KgmitH8r6i74vxLUSIPXYhdj0AcIyxXphGF4E8KtkiTKdV98ZiBR6Q6zLBaB8VGXVD4wx92TdO76LRhsv43l3M75O1sMwvCQbMEhEP4usrVyCxGCGO/Nw7cRlBx+rfM/IXfOdT6dOYsc8UQgCKSBlPnU5NF5y0qqUIYk9TUTRf/nUJTePDw2pYsfa7fZ1rgBY+G8pChfznk4o8Pjg+znI5pDPSR4Zr4CBNotorZ91BeEHAd8GImetlxReK1UwFEVfGWPhdZOI9ipgrD1KxLb0toLAzFQY5LXKOrjxWMUQI6L1XK23WDO0Sk2flSyXbVfPcM/Oc3t6j8OpcHs6PrTWNwB89ABSI6JbyvXge4Y7RXz8yb9waIc7z3Nt8I1NRM8TW2u90Rvq2MZv02ZBeQmhibcAAAAASUVORK5CYII=">
-            <img
+            <img class="footer-icone"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nO2Zu2tUURDGj68UPhCxsvABaqlNekHFVywkPkErO/EfsFEIChokjRba2AQLTbSJGglqYyc2BlGMvd0mm13P9527SZGRITe4hOzJPbtn997AfjCwxe7M/d2ZO3fOrDFddVVsichWAH0kB0m+JTlFsgxgXk0/k/wF4A3JBwDO6G9MESQi6/SCAIwCqJGUEAOQABgBcFp9mTzknLtE8nvoxXtskuT5jgHUarWDJD9FBFhuH5IkOdBWCJIXSFbaCCGp/bXWXo0OoPVLcqADALLMBqM9O+kD/TQHCEkbwpMoMNoq84Lgf7vXEoRz7koBIETNWnut6e4EwEYqj4TkM23Z6rdare4sl8vbK5XKjiRJ9llrD5EcWsVPNUmS/cEgEVvsRwC7VosH4HoGXxOhEBcjQYyLyMYsMTOCCMn+kFYb4409rSWU9eYFgHzL1MV0doqUjftZIQJBBMCpLA5HY4BYaw83ikGyF8DjdNhcsq8BIC+8EKVSaVszU+wKVhWRDR6IuVb8A3AistmXjb5IZTXpycZwjBgATjYESQ9FMYJ89tysP21/Brl4sosR5L1nbpuPdLPGfKX1OxLIeAOQnkj+RY/NvozMrCGQki8jc2sFBEAtNki/Dn/15tuOLP/ukpF8GAgy5yut2VAQa+0JE0EAXgbGnvaBTOUFojMUw2L/9DkbzwNERNYDYLT2qy+ZPECcc3ujHn8BnG3C4U2dn+qt0V4qPSL0rmA3QuPCNwHrIIbFHEuR2y8AisgWb5oBvFoDICNeiBTkZNFBrLXHVwVJ6/hHgUEmTVaRPFdUEAB9mUEirIPaBTJhQqWLM92KFwik4pzbY5qRDoQAFvIGAbDgnLvcFEQdzN28QUgOmBgC8ChHkKEoEHUwtwLKrGUQLMaKk4kGf73NdgBkJvOOt8VJ9V27QACMOed2m05JJ2XPmjMYBMAX3TubvOScO0Lyua5JmwDR99Sw+jBFkYj0WGuPAbitjaHBdzYBeA3gjrX2qP6m81faVVcmRP8AB4HTiOgD+ZAAAAAASUVORK5CYII=">
         </div>
-    </footer> -->
+        <div class="accordions">
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion-1">
+                <label for="accordion-1">
+                    O espaço possui estacionamento de fácil acesso disponível para os convidados?
+                    <span class="arrow">&#9660;</span>
+                </label>
+                <div class="accordion-content">
+                    Sim, o espaço possui estacionamento próprio no local e de fácil acesso, para até 500 carros.
+                </div>
+            </div>
+            <!-- Os outros itens do acordeão continuam aqui -->
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos_init.js"></script>
+    <script src="assets/js/arrow_animation.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,10 @@
 .diferenciais {
     margin-top: 20rem;
 }
-
+.diferenciais h2{
+    width: 60%;
+    margin: auto;
+}
 .capa-diferenciais {
     width: 100%;
     height: 85vw;
