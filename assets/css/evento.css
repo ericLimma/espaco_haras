@@ -84,6 +84,7 @@
     .evento-carrossel {
         max-width: 500px;
         margin-bottom: -350px;
+        max-height: 750px ;
     }
 
     .tipo_de_evento {

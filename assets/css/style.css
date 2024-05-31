@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -140,9 +142,21 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.desktop{
+
+.desktop {
     display: none;
 }
+
+.zoom {
+    transition: all 0.4s ease-in-out;
+
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
 
@@ -151,7 +165,8 @@ main {
     .desktop {
         display: block;
     }
-    .mobile{
+
+    .mobile {
         display: none;
     }
 }
